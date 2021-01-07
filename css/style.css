@@ -1,0 +1,212 @@
+body{
+    /*background-color: bisque;*/
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.banner{
+    width: 100%;
+    background-image:url(../img/banner.jpg);
+    border-top:0.3rem solid #5385c1 ;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed;*/
+   /* height: 25rem;*/
+    padding-bottom: 10rem;
+}
+.container{
+    max-width:850px;
+    margin: 0 auto;
+   /* background-color: chartreuse;*/
+   
+    
+}
+.banner h1{
+    padding-top: 3rem;
+    clear: both;
+}
+.banner h1,h5{
+    text-align: center;
+    color: white;
+    /*padding-top: 3rem;*/
+}
+.logo{
+    margin-top: 1.3rem;
+    font-size: 2.5rem;
+    color: white;
+    float: left;
+    
+}
+.bt{
+    display: none;
+}
+ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    float: left;
+    margin-top: 2.5rem;
+    margin-right: 2rem;
+     
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0.6rem 0.7rem ;
+}
+/********************************************/
+.box{
+    width: 100%;
+    margin: 4rem 0rem;
+}
+.section{
+    width: 30%;
+    float: left;
+}
+.section h3{
+    color: #5385c1;
+}
+.section-2{
+     margin-left: 1rem;
+     margin-right: 1rem;
+     border-left:0.1rem solid gray ;
+     border-right:0.1rem solid gray ;
+     padding: 0rem 1rem;
+}
+/****************Third section***************/
+ .big-banner{
+     width: 100%;
+     /*height: 80vh;*/
+     text-align: center;
+     background-color: #5385c1;
+     padding: 0.5rem 0rem;
+     color: white;
+     margin: 0.5rem 0rem;
+ }
+.testimonial{
+     /*display: flex;*/
+     max-width: 100%;
+    /* display: flex;
+     justify-content: space-around;*/
+}
+.testimonial .magna{
+    float: left;
+    width: 21%;
+    box-sizing: border-box;
+    padding: 0.5rem;
+     margin: 1rem 1.5rem 3rem 0.5rem;
+    border: 0.1rem solid rgb(248, 238, 238);
+    text-align: center;
+    color: #ffff;
+    
+}
+.magna img{
+    width: 80%;
+    border-radius: 50%;
+}
+/************fourth*****/
+.text{
+    text-align: center;
+    color: #5385c1;
+    padding: 2rem 0rem;
+
+}
+.left{
+    max-width: 45%;
+    float: left;
+    margin-bottom: 3rem;
+}
+.left img{
+    width: 100%;
+}
+
+.right{
+   max-width: 45%;
+   float: right;
+}
+.right img{
+    width: 100%;
+}
+.para h3{
+    color: #5385c1;
+}
+.para p{
+    line-height: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+button{
+    width: 6.5rem;
+    padding: 1rem;
+    border: none;
+    background-color:#5385c1 ;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    outline: none;
+}
+/*********************fifth section(5)**********************/
+hr{
+    clear: both;
+  
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer p{
+    color: rgb(221, 224, 221);
+}
+
+/*************media and queary**********/
+@media only screen and (max-width:750px){
+    .left,.right{
+       max-width: 80%;
+        clear: both;
+        float: none;
+        margin: 0.8rem auto;
+       
+    }
+    .testimonial .magna{
+        width: 65%;
+        clear: both;
+        margin: 2rem auto;
+        float: none;
+    }
+    .section{
+        width: 80%;
+        float: none;
+        margin: 2rem auto;
+    }
+    .section-2{
+        
+        padding: 0;
+        border: 0;
+        
+    }
+    ul{
+        display: none;
+    }
+    .bt{
+        display: block;
+        float: right;
+        margin-top: 1.2rem;
+        background-color: transparent;
+    }
+    .footer{
+        display: block;
+        text-align: center;
+    }
+}
